@@ -1,0 +1,277 @@
+:root {
+    --back-white: #FEFEFE;
+    /*#f1f2f6*/
+    --purple-dark: #27187e;
+    --purple-mid: #758bfd;
+    --purple-light: #aeb8fe;
+    --oragne-mid: #ff8600;
+    --orange-light: #FFBC70;
+    --oragne-dark: #B86200;
+
+    background-color: var(--back-white);
+    font-family: monospace, Courier, 'Courier New';
+    overflow-x: hidden;
+}
+
+
+hdkui
+
+.outlined {
+    border: none;
+}
+
+/* Body and Content Items */
+
+body {
+    background-color: transparent !important;
+    font-family: monospace, Courier, 'Courier New';
+}
+
+.page-divider {
+    border-bottom: 1px solid grey;
+}
+
+/*  all screens navigation */
+
+.navigation {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20vh;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16vw;
+    max-width: 300px;
+    height: 100vh;
+    background-color: var(--purple-dark);
+    border-right: 3px solid var(--purple-mid);
+}
+
+ul.navigation {
+    list-style-type: none;
+}
+
+
+
+/* small naviagtion */
+.small-nav-name {
+    margin-top: 1vh;
+    margin-bottom: auto;
+}
+
+.small-nav {
+    height: 8vh;
+    width: 100vw;
+    background-color: var(--purple-dark);
+    color: var(--back-white);
+    border-bottom: 3px solid var(--purple-mid);
+}
+
+
+a.nav-link {
+    text-decoration: none;
+    color: var(--purple-light);
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+    font-size: 1.5rem;
+    font-weight: 900;
+    transition: color 0.3s;
+}
+
+a.nav-link:hover {
+    color: var(--purple-mid);
+}
+
+a.nav-link:active {
+    position: relative;
+    top: 2px;
+}
+
+.page-section {
+    height: 100vh;
+}
+
+/* Buttons */
+
+
+/* Images */
+.intro-image {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 2vh;
+}
+
+/* Text Decoration */
+.name-custom {
+    border-radius: 6px;
+    background-color: var(--purple-dark);
+    color: var(--back-white);
+}
+
+.contact {
+    color: aqua;
+    border: 3px solid aqua;
+    bottom: 0;
+    z-index: 3;
+}
+
+.small-nav-dropdown-button {
+    position: relative;
+    margin-top: 1vh;
+    display: inline-block;
+    cursor: pointer;
+    background-color: var(--purple-light);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.small-nav-dropdown-button:hover {
+    background-color: var(--purple-mid);
+}
+
+/* centered class */
+.centered {
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+/* paragraph text */
+.paragraph {
+    max-width: 900px;
+}
+
+/* about */
+.email-link {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--purple-dark);
+    text-transform: uppercase;
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: var(--back-white);
+    color: black;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.social-icons .social-icon:last-child {
+    margin-right: 0;
+}
+
+.social-icons .social-icon:hover {
+    background-color: var(--purple-mid);
+}
+
+.icon-image {
+    width: 100;
+    height: 100%;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+}
+
+.about h1 {
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+.about h2 {
+    font-weight: 600;
+    color: var(--purple-dark);
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+/* experience */
+.experience {
+    display: flex;
+    align-items: center;
+}
+
+.experience-item {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.experience h2 {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* education */
+.education {
+    display: flex;
+    align-items: center;
+}
+
+.education-item {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.education h2 {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.related-coursework {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: underline var(--purple-dark) .2rem;
+}
+
+.time-attended {
+    color: var(--purple-mid);
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    align-items: center;
+}
+
+.skills ul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.skills-icon {
+    background-color: var(--back-white);
+    color: black;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    height: 80px;
+    width: 80px;
+}
+
+/* interests */
+.interests {
+    display: flex;
+    align-items: center;
+}
+
+.interests-item {
+    padding-top: 2vh;
+}
